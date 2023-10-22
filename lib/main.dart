@@ -1,3 +1,5 @@
+import 'package:firebase_with_image/Screen/dashboard/dashboard_page.dart';
+import 'package:firebase_with_image/Screen/help/help_page.dart';
 import 'package:firebase_with_image/Screen/pre_login_in/splash_page.dart';
 import 'package:flutter/material.dart';
 
@@ -15,11 +17,18 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        appBarTheme: AppBarTheme(
+          elevation: 0,
+          centerTitle: true,
+          backgroundColor: Colors.transparent,
+        ),
       ),
-      home: SplashScreen(),
+      home:
+      // SplashScreen(),
+      DashBoardPage(),
+      // HelpPage(),
     );
   }
 }

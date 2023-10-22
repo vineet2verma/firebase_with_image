@@ -18,10 +18,10 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    movelogin();
+    checkloginstatus();
   }
 
-  movelogin(){
+  checkloginstatus(){
     print("run");
     Timer(Duration(seconds: 3), () => model().islogin(context) ,  );
   }

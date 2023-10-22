@@ -33,26 +33,26 @@ class _AboutUsState extends State<AboutUs> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            SizedBox(
-              height: 20,
-            ),
-            Text("About Us",
-                style: TextStyle(color: Colors.teal, fontSize: 31)),
-            SizedBox(
-              height: 20,
-            ),
-            SingleChildScrollView(
-              child: Container(
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                height: 20,
+              ),
+              Text("About Us",
+                  style: TextStyle(color: Colors.teal, fontSize: 31)),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
                   child: Text(textFileData,
                       style: TextStyle(fontSize: 18),textAlign: TextAlign.justify,
                   )
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

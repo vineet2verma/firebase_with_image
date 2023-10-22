@@ -1,6 +1,5 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-
 import '../Screen/dashboard/dashboard_page.dart';
 import '../Screen/pre_login_in/SignInScreen.dart';
 
@@ -29,10 +28,10 @@ class model {
     }
   }
 
-  List<Map<String,dynamic>> listdata = List.generate(20, (index) =>
-  {'Product': 'Product ${index+1}',
-    'img':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKeRPJ6Cu_cdiLiDb_ffrn6r0oi09bJXoGyA&usqp=CAU'  })
-      .toList();
+  // List<Map<String,dynamic>> listdata = List.generate(20, (index) =>
+  // {'Product': 'Product ${index+1}',
+  //   'img':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKeRPJ6Cu_cdiLiDb_ffrn6r0oi09bJXoGyA&usqp=CAU'  })
+  //     .toList();
 
 
 }
